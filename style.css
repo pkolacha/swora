@@ -17,6 +17,7 @@ nav{
     position: sticky;
     font-family: Poppins;
     font-weight: 400;
+    z-index: 999;
 }
 
 nav ul {
@@ -103,19 +104,6 @@ nav i:hover{
     display: none;
 }
 
-.pro{
-    width: 100%;
-    height: 100vh;
-}
-
-#pro{
-    background-color: blue;
-}
-
-#cen{
-    background-color: blueviolet;
-}
-
 .logo img{
     height: 6vh;
     width: 6vh;
@@ -148,7 +136,12 @@ nav i:hover{
     float: left;
 }
 
-
+.main{
+    height: 92vh;
+    background: linear-gradient(to bottom, rgb(0 0 0 / 0.6), rgb(0 0 0 / 0), rgb(0 0 0 / 0.6)), url(./img/main-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 @media screen and (min-width: 768px){
     nav{
         background-color: #fff;
@@ -204,4 +197,20 @@ nav i:hover{
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
     }
+}
+
+
+
+
+.pro{
+    width: 100%;
+    height: 100vh;
+}
+
+#pro{
+    background-color: blue;
+}
+
+#cen{
+    background-color: blueviolet;
 }
