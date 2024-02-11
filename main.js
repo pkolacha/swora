@@ -15,12 +15,42 @@ burgerBtn.addEventListener('click', handleNav)
 
 function showMe(value){
     if(value=="a"){
-        document.getElementById('x').style.display="block";
-        document.getElementById('y').style.display="none";
+        document.getElementById('seniorzy').style.display="block";
+        document.getElementById('js').style.display="none";
+        document.getElementById('jm').style.display="none";
+        document.getElementById('trampkarz').style.display="none";
+        document.getElementById('mlodzik').style.display="none";
     }
 
     if(value=="b"){
-        document.getElementById('x').style.display="none";
-        document.getElementById('y').style.display="block";
+        document.getElementById('seniorzy').style.display="none";
+        document.getElementById('js').style.display="block";
+        document.getElementById('jm').style.display="none";
+        document.getElementById('trampkarz').style.display="none";
+        document.getElementById('mlodzik').style.display="none";
+    }
+
+    if(value=="c"){
+        document.getElementById('seniorzy').style.display="none";
+        document.getElementById('js').style.display="none";
+        document.getElementById('jm').style.display="block";
+        document.getElementById('trampkarz').style.display="none";
+        document.getElementById('mlodzik').style.display="none";
+    }
+
+    if(value=="d"){
+        document.getElementById('seniorzy').style.display="none";
+        document.getElementById('js').style.display="none";
+        document.getElementById('jm').style.display="none";
+        document.getElementById('trampkarz').style.display="block";
+        document.getElementById('mlodzik').style.display="none";
+    }
+
+    if(value=="e"){
+        document.getElementById('seniorzy').style.display="none";
+        document.getElementById('js').style.display="none";
+        document.getElementById('jm').style.display="none";
+        document.getElementById('trampkarz').style.display="none";
+        document.getElementById('mlodzik').style.display="block";
     }
 }

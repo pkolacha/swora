@@ -31,7 +31,7 @@ nav ul {
     align-items: end;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
 }
 
 nav li{
@@ -143,6 +143,12 @@ nav i:hover{
     background-position: center;
 }
 
+
+
+
+
+
+
 .tytul{
     margin-bottom: 8rem;
 }
@@ -154,11 +160,14 @@ nav i:hover{
     -webkit-box-shadow: 4px 4px 20px 0px rgba(66, 68, 90, 1);
     -moz-box-shadow: 4px 4px 20px 0px rgba(66, 68, 90, 1);
     box-shadow: 4px 4px 20px 0px rgba(66, 68, 90, 1);
-    border-radius: 15px;
 }
 
 .ptable{
 	margin: 0px 0% 30px 0%;
+}
+
+.col{
+    background-color: #333;
 }
 
 th, td {
@@ -181,7 +190,7 @@ th{
 	text-align: center;
 }
 
-.wpos td{
+.wpos td:nth-child(1){
 	color: rgb(12, 190, 12);
 }
 
@@ -193,11 +202,15 @@ th{
 	color: var(--text-color);
 }
 
+.pos td:nth-child(2){
+    width: 300px;
+}
+
 .lpos{
     text-align: center;
 }
 
-.lpos td{
+.lpos td:nth-child(1){
     color: red;
 }
 
@@ -222,7 +235,6 @@ th{
 .guzik{
     width: 100%;
     text-align: center;
-    margin-bottom: 3rem;
     height: 4vh;
 }
 
@@ -233,19 +245,27 @@ th{
 
 .przycisk select{
     height: 30px;
-    width: 100px;
+    width: 150px;
     color: black;
-    background: lightgray;
-    border-radius: 15px;
+    background: purple;
+    border-radius: 10px;
 }
 
-#x{
+#seniorzy{
     display: block;
 }
 
-#y{
+#js,
+#jm,
+#trampkarz,
+#mlodzik{
     display: none;
 }
+
+
+
+
+
 @media screen and (min-width: 768px){
     nav{
         background-color: #fff;
@@ -303,6 +323,14 @@ th{
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
+    }
+    th:nth-child(5),
+    th:nth-child(6),
+    th:nth-child(7),
+    td:nth-child(5),
+    td:nth-child(6),
+    td:nth-child(7){
+    display: none;
     }
 }
 
