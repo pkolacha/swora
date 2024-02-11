@@ -262,7 +262,43 @@ th{
     display: none;
 }
 
+.contact{
+    display: flex;
+    align-items: center;
+}
 
+.contact-box{
+    width: 50%;
+
+}
+
+.icon{
+    position: absolute;
+    left: 0;
+}
+
+.address{
+    width: 50%;
+    background-color: bisque;
+}
+
+.phone{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.container{
+    width: 80%;
+    display: flex;
+    margin: 2rem auto;
+}
+
+.history-img img{
+    height: 250px;
+    margin-right: 3rem;
+}
 
 
 
