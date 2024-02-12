@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=PT+Sans+Narrow&family=Poppins&display=swap');
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -6,10 +7,15 @@
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: #fff;
 	background-color: #1e1d23;
 	font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 nav{
@@ -59,7 +65,7 @@ nav i,
 
 .h a:after{
   position: absolute;
-  top: 1.6rem;
+  top: 1.9rem;
   left: 0;
   margin: auto;
   width: 0%;
@@ -150,7 +156,9 @@ nav i:hover{
 
 
 .tytul{
-    margin-bottom: 8rem;
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
 }
 
 .ptable table{
@@ -262,6 +270,16 @@ th{
     display: none;
 }
 
+.title{
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem 5rem;
+    text-transform: uppercase;
+    /* text-decoration: underline blue 2px;
+    text-underline-offset: 10px;   */
+}
+
 .contact{
     display: flex;
     align-items: center;
@@ -269,23 +287,56 @@ th{
 
 .contact-box{
     width: 50%;
-
 }
 
 .icon{
     position: absolute;
-    left: 0;
+    left: 2.5rem;
 }
 
 .address{
     width: 50%;
-    background-color: bisque;
+}
+
+.map iframe{
+    height: 500px;
+    width: 100%;
 }
 
 .phone{
-    display: flex;
-    justify-content: center;
     text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.phone i{
+    padding: 8px;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.phone:nth-child(5) i{
+    margin-top: 0;
+}
+
+.phone:nth-child(5) h2{
+    margin-left: 3rem;
+}
+
+.phone h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.phone h3{
+    font-size: 1.3rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.contact-info span{
+    border-bottom: 2px solid red;
 }
 
 
@@ -296,11 +347,61 @@ th{
 }
 
 .history-img img{
-    height: 250px;
+    height: 270px;
     margin-right: 3rem;
 }
 
+.history-btn{
+    margin-top: 1rem;
+}
 
+.history-btn a{
+    padding: 0.4rem .8rem;
+    background-color: red;
+    border-radius: 30px;
+    font-size: 1.3rem;
+}
+
+.history-btn i{
+    margin-left: .6rem;
+    padding: 6px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.history-btn:hover i{
+    margin-left: 1rem;
+    transition: all .3s ease;
+}
+
+.sponsorzy-logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sponsorzy-logo>*{
+    flex: 0 0 33.3333%;
+}
+
+.sponsorzy-logo img{
+    aspect-ratio: 2/1;
+    width: 280px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    display: flex;
+    margin: auto;
+    margin: 1rem 0;
+}
+
+.sponsorzy-logo img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    filter: none;
+    -webkit-box-shadow: 0px 0px 33px -6px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 33px -6px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 33px -6px rgba(66, 68, 90, 1);
+}
 
 @media screen and (min-width: 768px){
     nav{
