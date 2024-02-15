@@ -143,15 +143,51 @@ nav i:hover{
 
 .main{
     height: 92vh;
-    background: linear-gradient(to bottom, rgb(0 0 0 / 0.6), rgb(0 0 0 / 0), rgb(0 0 0 / 0.6)), url(./img/main-bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    /* background: linear-gradient(to bottom, rgb(0 0 0 / 0.6), rgb(0 0 0 / 0), rgb(0 0 0 / 0.6)), url(./img/main-bg.jpg) no-repeat; */
+    /* background-size: cover;
+    background-position: center; */
 }
+
+.shape{
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    background: green;
+    height: 92vh;
+}
+
+.main-img{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.main-img img{
+    height: 400px;
+    width: 600px;
+}
+
+.main-text{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.main-text h3{
+    font-style: italic;
+    font-size: 2.5rem;
+    color: gray;
+}
+
+.main-text h2{
+    font-size: 4rem;
+}
+
 
 .scroll a{
     position: absolute;
     bottom: 20px;
-    left: 50%;
+    left: 40%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
@@ -169,7 +205,8 @@ nav i:hover{
 
 .main a{
     padding-top: 80px;
-  }
+}
+
 .main a span{
     position: absolute;
     top: 0;
@@ -421,7 +458,7 @@ th{
     border-radius: 50%;
 }
 
-.history-btn:hover i{
+.history-btn a:hover i{
     margin-left: 1rem;
     transition: all .3s ease;
 }
@@ -530,36 +567,6 @@ footer{
     color: red;
 }
 
-/* .top-btn{
-    position: absolute;
-    width: 3rem;
-    height: 3rem;
-    bottom: 13px;
-    right: 13px;
-    background-color: red;
-    border-radius: 50%;
-    text-decoration: none;
-    text-align: center;
-    display: none;
-}
-
-.top-btn i{
-    color: white;
-    margin-top: .6rem;
-    font-size: 1.8rem;
-    transition: all .3s ease;
-}
-
-.top-btn:hover{
-    opacity: .9;
-    transform: scale(1.1);
-}
-
-.top-btn:hover i{
-    font-size: 2rem;
-    margin-top: .5rem;
-} */
-
 .top-btn{
     width: 2.3rem;
     height: 2.3rem;
@@ -580,6 +587,56 @@ footer{
 .show{
     display: block flex;
 }
+
+
+.historia .shape{
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.historia .main-text {
+    text-align: right;
+}
+
+.historia a{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.historia .main-text p{
+    font-style: italic;
+    /* font-size: 2.5rem; */
+    color: gray;
+}
+
+.historia .main-img{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.historia .main-text{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.historia-container{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.historia-text1{
+    display: flex;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+
 
 @media screen and (min-width: 768px){
     nav{
