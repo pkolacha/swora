@@ -54,3 +54,11 @@ function showMe(value){
         document.getElementById('mlodzik').style.display="block";
     }
 }
+
+document.onscroll = () => {
+    if (window.scrollY > 400){
+        document.querySelector('.top-btn').classList.add('show');
+    }else{
+        document.querySelector('.top-btn').classList.remove('show');
+    }
+} 
