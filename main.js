@@ -62,3 +62,13 @@ document.onscroll = () => {
         document.querySelector('.top-btn').classList.remove('show');
     }
 } 
+
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+  
+    loader.classList.add("loader--hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
