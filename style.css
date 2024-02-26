@@ -862,7 +862,7 @@ footer{
     .ptable{
         margin: 2rem 2rem 0 .5rem;
         width: 90%;
-        transform: scale(.95);
+        transform: scale(.9);
     }
     .pos td:nth-child(2){
         width: auto;
