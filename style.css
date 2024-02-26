@@ -46,7 +46,6 @@ nav ul {
     justify-content: center;
     flex-direction: column;
     background-color: var(--background);
-    height: 8vh;
 }
 
 nav a{
@@ -54,6 +53,10 @@ nav a{
     color: var(--text);
     text-decoration: none;
     position: relative;
+}
+
+nav li{
+    padding-bottom: 3.5rem;
 }
 
 nav i,
@@ -781,6 +784,7 @@ footer{
         margin-left: 2rem;
         display: flex;
         justify-content: center;
+        padding-bottom: 0;
     }
     .burger{
         display: none;
