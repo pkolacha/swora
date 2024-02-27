@@ -263,7 +263,7 @@ section:nth-child(3){
 }
 
 .ptable table{
-	margin: 30px auto;
+	margin: 30px auto 0 auto;
 	border-collapse: collapse;
     -webkit-box-shadow: 4px 4px 20px 0px rgba(66, 68, 90, 1);
     -moz-box-shadow: 4px 4px 20px 0px rgba(66, 68, 90, 1);
@@ -425,7 +425,6 @@ select:focus{
     letter-spacing: 2px;
     font-size: 1.6rem;
     margin: 0rem 0 3rem 5rem;
-    padding-top: 2rem;
     text-transform: uppercase;
 }
 
@@ -837,7 +836,7 @@ footer{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        height: 100vh;
+        height: 100svh;
     }
     .shape{
         opacity: .8;
@@ -886,11 +885,17 @@ footer{
     .icon{
         left: .7rem;
     }
+    .phone i{
+        font-size: 1rem;
+    }
     .phone h2{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .phone h3{
-        font-size: 1rem;
+        font-size: .8rem;
+    }
+    .mail a{
+        font-size: .8rem;
     }
     .contact-info{
         margin-left: 2rem;
