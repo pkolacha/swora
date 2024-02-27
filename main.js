@@ -13,46 +13,18 @@ const handleNav = () => {
 burgerBtn.addEventListener('click', handleNav)
 
 
-function showMe(value){
-    if(value=="a"){
-        document.getElementById('seniorzy').style.display="block";
-        document.getElementById('js').style.display="none";
-        document.getElementById('jm').style.display="none";
-        document.getElementById('trampkarz').style.display="none";
-        document.getElementById('mlodzik').style.display="none";
-    }
 
-    if(value=="b"){
-        document.getElementById('seniorzy').style.display="none";
-        document.getElementById('js').style.display="block";
-        document.getElementById('jm').style.display="none";
-        document.getElementById('trampkarz').style.display="none";
-        document.getElementById('mlodzik').style.display="none";
-    }
+const showMe = (v) => {
+    let seniorzy = document.getElementById('seniorzy');
+    let js = document.getElementById('js');
+    let jm = document.getElementById('jm');
+    let trampkarz = document.getElementById('trampkarz');
+    let mlodzik = document.getElementById('mlodzik');
 
-    if(value=="c"){
-        document.getElementById('seniorzy').style.display="none";
-        document.getElementById('js').style.display="none";
-        document.getElementById('jm').style.display="block";
-        document.getElementById('trampkarz').style.display="none";
-        document.getElementById('mlodzik').style.display="none";
-    }
-
-    if(value=="d"){
-        document.getElementById('seniorzy').style.display="none";
-        document.getElementById('js').style.display="none";
-        document.getElementById('jm').style.display="none";
-        document.getElementById('trampkarz').style.display="block";
-        document.getElementById('mlodzik').style.display="none";
-    }
-
-    if(value=="e"){
-        document.getElementById('seniorzy').style.display="none";
-        document.getElementById('js').style.display="none";
-        document.getElementById('jm').style.display="none";
-        document.getElementById('trampkarz').style.display="none";
-        document.getElementById('mlodzik').style.display="block";
-    }
+    (v == "a") ? seniorzy.style.display="block" : seniorzy.style.display="none";
+    (v == "b") ? js.style.display="block" : js.style.display="none";
+    (v == "c") ? jm.style.display="block" : jm.style.display="none";
+    (v == "d") ? trampkarz.style.display="block" : trampkarz.style.display="none";
 }
 
 document.onscroll = () => {
@@ -72,3 +44,14 @@ window.addEventListener("load", () => {
       document.body.removeChild(loader);
     });
   });
+
+
+  // navbar hide
+
+document.addEventListener('click', (e) => {
+    let navbar = document.querySelector("body > nav > ul");
+    let navbarbtn = document.querySelector("body > nav > button > i.fas.fa-bars");
+    if(navbar.classList.contains('active') && e.target !== navbar && e.target !== navbarbtn){
+        document.querySelector("body > nav > button").click();
+    }
+})
