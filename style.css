@@ -736,9 +736,6 @@ footer{
 
 .historia-img_box img{
     margin: 0 3rem;
-}
-
-.historia-img_box img{
     margin: 1rem 2rem;
     height: 200px;
 }
@@ -867,9 +864,13 @@ footer{
     }
     .headin{
         width: 40%;
+        font-size: 2rem;
     }
     .przycisk{
         width: 60%;
+    }
+    select{
+        font-size: 1.6rem;
     }
     .contact{
         flex-direction: column;
@@ -908,6 +909,8 @@ footer{
     .title{
         text-align: center;
         margin-left: 0;
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
     }
     .container{
         display: flex;
@@ -919,13 +922,20 @@ footer{
     }
     .history-img img{
         margin: auto;
+        height: 180px;
+    }
+    .history-text{
+        font-size: 1.15rem;
     }
     .history-btn{
         margin-top: 2rem;
     }
     .history-btn a{
         padding: 0.6rem 1rem;
-        font-size: 1.4rem;
+        font-size: 1rem;
+    }
+    .sponsor-title{
+        font-size: .9rem;
     }
     .socials i{
         margin: 1.5rem .5rem .5rem .5rem;
@@ -953,9 +963,20 @@ footer{
     .historia-img_box{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .historia-container img{
         margin: 2rem auto 0 auto;
+        height: 150px;
+    }
+    .historia-container p{
+        font-size: 1rem;
+    }
+    .historia-img_box img{
+        height: 150px;
+    }
+    .historia-container li{
+        font-size: 1rem;
     }
 
 }

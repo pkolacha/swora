@@ -25,6 +25,7 @@ const showMe = (v) => {
     (v == "b") ? js.style.display="block" : js.style.display="none";
     (v == "c") ? jm.style.display="block" : jm.style.display="none";
     (v == "d") ? trampkarz.style.display="block" : trampkarz.style.display="none";
+    (v == "e") ? mlodzik.style.display="block" : mlodzik.style.display="none";
 }
 
 document.onscroll = () => {
