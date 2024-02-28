@@ -724,6 +724,12 @@ footer{
     margin: 1rem 0 1rem 4rem;
 }
 
+.historia-container li{
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
 .historia-container p:nth-child(2) img{
     height: 200px;
     width: 200px;
