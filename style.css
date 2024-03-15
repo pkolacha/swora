@@ -943,6 +943,9 @@ footer{
     .sponsor-title{
         font-size: .9rem;
     }
+    .sponsorzy-logo img{
+        filter: grayscale(0%);
+    }
     .socials i{
         margin: 1.5rem .5rem .5rem .5rem;
     }
